@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="SwiftAssess Signup Suite" parallel="false">
+  <test name="Desktop">
+    <classes>
+      <class name="com.swiftAssess.tests.SignupTests"/>
+    </classes>
+  </test>
+  <test name="Mobile">
+    <classes>
+      <class name="com.swiftAssess.tests.SignupMobileTests"/>
+    </classes>
+  </test>
+</suite>
