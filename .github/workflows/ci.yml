@@ -35,11 +35,11 @@ jobs:
         uses: nanasess/setup-chromedriver@v2
 
       - name: Build with Maven
-        working-directory: functionalTestsProjects
+        working-directory: functionalTestsProject
         run: mvn -B clean install
 
       - name: Run Selenium Tests (Headless)
-        working-directory: functionalTestsProjects
+        working-directory: functionalTestsProject
         run: |
           export DISPLAY=:99
           chromedriver --url-base=/wd/hub &
@@ -49,4 +49,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: surefire-reports
-          path: functionalTestsProjects/target/surefire-reports
+          path: functionalTestsProject/target/surefire-reports
