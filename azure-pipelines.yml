@@ -23,7 +23,7 @@ steps:
     sudo chmod +x /usr/local/bin/chromedriver
   displayName: 'Install Chrome & ChromeDriver'
 
-# Run Selenium Tests using your POM path
+# Install Dependencies and Run Selenium Tests using the POM file
 - script: |
     mvn -f TechnicalAssessmentGammaLearn/functionalTestsProject/pom.xml clean test -Dheadless=true
   displayName: 'Run Selenium Tests'
